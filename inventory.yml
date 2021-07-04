@@ -1,0 +1,21 @@
+---
+all:
+  children:
+    router:
+      hosts:
+        R1:
+          ansible_host: 192.168.0.190
+        R2:
+          ansible_host: 192.168.0.191
+    switches:
+      hosts:
+        SW1:
+          ansible_host: 192.168.0.180
+        SW2:
+          ansible_host: 192.168.0.181
+        SW3:
+          ansible_host: 192.168.0.182
+  vars:
+    ansible_network_os: nxos
+    ansible_connection: network_cli
+...
