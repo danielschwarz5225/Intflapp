@@ -2,6 +2,8 @@
 - name: Flapp Interfaces after reboot
   hosts: 
     - switches
+  collections: 
+    - cisco.nxos  
   gather_facts: no
 
   tasks:
