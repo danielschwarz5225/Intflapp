@@ -1,7 +1,7 @@
 --- 
 - name: Flapp Interfaces after reboot
   hosts: 
-    - Switches
+    - switches
   gather_facts: no
 
   tasks:
