@@ -14,19 +14,19 @@
         - no shutdown
         parents: interface Ethernet1/1 - 7
 
-    #- name: Flapping Loopback Interfaces
-    #  nxos_config:
-    #    lines:
-    #    - shutdown
-    #    - no shutdown
-    #    parents: interface Loopback 0 - 1
-#
-    #- name: Flapping Nve Interfaces
-    #  nxos_config:
-    #    lines:
-    #    - shutdown
-    #    - no shutdown
-    #    parents: interface Nve 1
-#
+    - name: Flapping Loopback Interfaces
+      nxos_config:
+        lines:
+        - shutdown
+        - no shutdown
+        parents: interface Loopback 0 - 1
+
+    - name: Flapping Nve Interfaces
+      nxos_config:
+        lines:
+        - shutdown
+        - no shutdown
+        parents: interface Nve 1
+
 
 
